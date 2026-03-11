@@ -9,11 +9,9 @@
 
 <style>
 
-/* GENERAL */
-
 body{
 margin:0;
-font-family: 'Segoe UI', sans-serif;
+font-family:'Segoe UI',sans-serif;
 background:#fff5f7;
 color:#333;
 scroll-behavior:smooth;
@@ -31,10 +29,6 @@ align-items:center;
 position:sticky;
 top:0;
 z-index:1000;
-}
-
-nav h2{
-margin:0;
 }
 
 nav a{
@@ -63,10 +57,6 @@ font-size:50px;
 background:rgba(0,0,0,0.5);
 padding:20px;
 border-radius:10px;
-}
-
-.hero p{
-font-size:20px;
 }
 
 /* SECCIONES */
@@ -177,14 +167,8 @@ animation:caer linear infinite;
 }
 
 @keyframes caer{
-0%{
-transform:translateY(-50px);
-opacity:1;
-}
-100%{
-transform:translateY(100vh);
-opacity:0;
-}
+0%{transform:translateY(-50px);opacity:1;}
+100%{transform:translateY(100vh);opacity:0;}
 }
 
 </style>
@@ -193,11 +177,9 @@ opacity:0;
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
 
-<h2>🍓 El cerro</h2>
+<h2>🍓 El Cerro</h2>
 
 <div>
 <a href="#productos">Productos</a>
@@ -208,8 +190,6 @@ opacity:0;
 
 </nav>
 
-<!-- HERO -->
-
 <div class="hero">
 
 <div>
@@ -219,8 +199,6 @@ opacity:0;
 
 </div>
 
-<!-- PRODUCTOS -->
-
 <section id="productos">
 
 <h2>Nuestros Productos</h2>
@@ -228,21 +206,20 @@ opacity:0;
 <div class="productos">
 
 <div class="card">
-<img src="c:\Users\Usuario\Downloads\Fresas2.jpg.jpeg">
+<img src="imagenes/fresas2.jpg">
 <h3>Fresas</h3>
 <p>Fresas frescas, dulces y perfectas para postres.</p>
 </div>
 
 <div class="card">
-<img src="c:\Users\Usuario\Downloads\uchuvas1.jpg.jpeg">
+<img src="imagenes/uchuvas1.jpg">
 <h3>Uchuvas</h3>
 <p>Uchuvas naturales llenas de sabor y vitaminas.</p>
-</div> 
+</div>
+
 </div>
 
 </section>
-
-<!-- GALERIA -->
 
 <section id="galeria">
 
@@ -250,19 +227,17 @@ opacity:0;
 
 <div class="galeria">
 
-<img src="c:\Users\Usuario\Downloads\Fresas4.jpg.jpeg">
-<img src="c:\Users\Usuario\Downloads\Fresas5.jpg.jpeg">
-<img src="c:\Users\Usuario\Downloads\Fresas3.jpg.jpeg">
-<img src="c:\Users\Usuario\Downloads\Frsas6.jpg.jpeg">
-<img src="c:\Users\Usuario\Downloads\frsas7.jpg.jpeg">
-<img src="c:\Users\Usuario\Downloads\Fresas8jpg.jpeg">
-
+<img src="imagenes/fresas4.jpg">
+<img src="imagenes/fresas5.jpg">
+<img src="imagenes/fresas3.jpg">
+<img src="imagenes/fresas6.jpg">
+<img src="imagenes/fresas7.jpg">
+<img src="imagenes/fresas8.jpg">
 
 </div>
 
 </section>
 
-<!-- OPINIONES -->
 <section id="opiniones">
 
 <h2>Opiniones de Clientes</h2>
@@ -284,8 +259,6 @@ Las uchuvas son increíbles, súper recomendadas.
 </div>
 
 </section>
-
-<!-- CONTACTO -->
 
 <section id="contacto">
 
@@ -309,8 +282,6 @@ Contáctanos directamente por WhatsApp para hacer tu pedido.
 </a>
 
 <script>
-
-/* frutas cayendo */
 
 function crearFruta(){
 
