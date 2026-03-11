@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fresas y Uchuvas el Cerro 🍓</title>
+
+<style>
+
+/* GENERAL */
+
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#fff5f7;
+color:#333;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+background:#c4002f;
+color:white;
+display:flex;
+justify-content:space-between;
+padding:15px 30px;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav h2{
+margin:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background-image:url("https://img.freepik.com/fotos-premium/fresas-envasadas-caja-dulce-madura-perfecta-cosecha-fresas-huerta-organica-agricultura_360074-35819.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* SECCIONES */
+
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+color:#c4002f;
+margin-bottom:30px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+/* GALERIA */
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.galeria img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.galeria img:hover{
+transform:scale(1.1);
+}
+
+/* OPINIONES */
+
+.opiniones{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.opinion{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+
+footer{
+background:#c4002f;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* FRUTAS CAYENDO */
+
+.fruta{
+position:fixed;
+top:-50px;
+font-size:30px;
+animation:caer linear infinite;
+}
+
+@keyframes caer{
+0%{
+transform:translateY(-50px);
+opacity:1;
+}
+100%{
+transform:translateY(100vh);
+opacity:0;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>🍓 El cerro</h2>
+
+<div>
+<a href="#productos">Productos</a>
+<a href="#galeria">Galería</a>
+<a href="#opiniones">Opiniones</a>
+<a href="#contacto">Pedidos</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div>
+<h1>Fresas y Uchuvas Del Cerro 🍓🟡</h1>
+<p>Calidad natural directo a tu mesa</p>
+</div>
+
+</div>
+
+<!-- PRODUCTOS -->
+
+<section id="productos">
+
+<h2>Nuestros Productos</h2>
+
+<div class="productos">
+
+<div class="card">
+<img src="c:\Users\Usuario\Downloads\Fresas2.jpg.jpeg">
+<h3>Fresas</h3>
+<p>Fresas frescas, dulces y perfectas para postres.</p>
+</div>
+
+<div class="card">
+<img src="c:\Users\Usuario\Downloads\uchuvas1.jpg.jpeg">
+<h3>Uchuvas</h3>
+<p>Uchuvas naturales llenas de sabor y vitaminas.</p>
+</div> 
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section id="galeria">
+
+<h2>Galería</h2>
+
+<div class="galeria">
+
+<img src="c:\Users\Usuario\Downloads\Fresas4.jpg.jpeg">
+<img src="c:\Users\Usuario\Downloads\Fresas5.jpg.jpeg">
+<img src="c:\Users\Usuario\Downloads\Fresas3.jpg.jpeg">
+<img src="c:\Users\Usuario\Downloads\Frsas6.jpg.jpeg">
+<img src="c:\Users\Usuario\Downloads\frsas7.jpg.jpeg">
+<img src="c:\Users\Usuario\Downloads\Fresas8jpg.jpeg">
+
+
+</div>
+
+</section>
+
+<!-- OPINIONES -->
+<section id="opiniones">
+
+<h2>Opiniones de Clientes</h2>
+
+<div class="opiniones">
+
+<div class="opinion">
+Las fresas son deliciosas y muy frescas.
+</div>
+
+<div class="opinion">
+Excelente atención y productos de calidad.
+</div>
+
+<div class="opinion">
+Las uchuvas son increíbles, súper recomendadas.
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section id="contacto">
+
+<h2>Haz tu pedido</h2>
+
+<p style="text-align:center;">
+Contáctanos directamente por WhatsApp para hacer tu pedido.
+</p>
+
+</section>
+
+<footer>
+
+<p>🍓 Fresas y Uchuvas el Cerro</p>
+<p>Pedidos al WhatsApp: +506 8331 0543</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/50683310543" target="_blank">
+💬 WhatsApp
+</a>
+
+<script>
+
+/* frutas cayendo */
+
+function crearFruta(){
+
+const fruta=document.createElement("div");
+
+fruta.classList.add("fruta");
+
+const frutas=["🍓","🟡"];
+
+fruta.innerHTML=frutas[Math.floor(Math.random()*frutas.length)];
+
+fruta.style.left=Math.random()*100+"vw";
+fruta.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(fruta);
+
+setTimeout(()=>{
+fruta.remove();
+},8000);
+
+}
+
+setInterval(crearFruta,600);
+
+</script>
+
+</body>
+</html>
