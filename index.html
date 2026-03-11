@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fresas y Uchuvas el Cerro 🍓</title>
+<title>Fresas y Uchuvas El Cerro 🍓</title>
 
 <style>
 
@@ -29,6 +29,7 @@ align-items:center;
 position:sticky;
 top:0;
 z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
 }
 
 nav a{
@@ -53,31 +54,31 @@ color:white;
 }
 
 .hero h1{
-font-size:50px;
-background:rgba(0,0,0,0.5);
-padding:20px;
-border-radius:10px;
+font-size:55px;
+background:rgba(0,0,0,0.55);
+padding:25px;
+border-radius:15px;
 }
 
 /* SECCIONES */
 
 section{
 padding:60px 20px;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 }
 
 h2{
 text-align:center;
 color:#c4002f;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
 /* PRODUCTOS */
 
 .productos{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
@@ -87,11 +88,11 @@ padding:20px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 text-align:center;
-transition:0.3s;
+transition:0.4s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-10px) scale(1.03);
 }
 
 .card img{
@@ -110,11 +111,43 @@ gap:15px;
 .galeria img{
 width:100%;
 border-radius:10px;
+cursor:pointer;
 transition:0.3s;
 }
 
 .galeria img:hover{
-transform:scale(1.1);
+transform:scale(1.08);
+}
+
+/* MODAL GALERIA */
+
+.modal{
+display:none;
+position:fixed;
+z-index:2000;
+padding-top:80px;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+}
+
+.modal img{
+margin:auto;
+display:block;
+max-width:90%;
+max-height:80vh;
+border-radius:10px;
+}
+
+.modal span{
+position:absolute;
+top:20px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
 }
 
 /* OPINIONES */
@@ -132,7 +165,23 @@ border-radius:10px;
 box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
-/* WHATSAPP */
+/* BOTONES */
+
+.botonPedido{
+display:block;
+width:250px;
+margin:30px auto;
+background:#25d366;
+color:white;
+padding:15px;
+border-radius:30px;
+text-align:center;
+font-size:18px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* WHATSAPP FLOTANTE */
 
 .whatsapp{
 position:fixed;
@@ -191,12 +240,10 @@ animation:caer linear infinite;
 </nav>
 
 <div class="hero">
-
 <div>
 <h1>Fresas y Uchuvas Del Cerro 🍓🟡</h1>
 <p>Calidad natural directo a tu mesa</p>
 </div>
-
 </div>
 
 <section id="productos">
@@ -206,13 +253,13 @@ animation:caer linear infinite;
 <div class="productos">
 
 <div class="card">
-<img src="imagenes/fresas2.jpg">
-<h3>Fresas</h3>
-<p>Fresas frescas, dulces y perfectas para postres.</p>
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas2.jpg.jpeg">
+<h3>Fresas Frescas</h3>
+<p>Fresas dulces, frescas y perfectas para postres.</p>
 </div>
 
 <div class="card">
-<img src="imagenes/uchuvas1.jpg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/uchuvas1.jpg.jpeg">
 <h3>Uchuvas</h3>
 <p>Uchuvas naturales llenas de sabor y vitaminas.</p>
 </div>
@@ -227,16 +274,23 @@ animation:caer linear infinite;
 
 <div class="galeria">
 
-<img src="https://github.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/blob/main/Fresas4.jpg.jpeg">
-<img src="imagenes/fresas5.jpg">
-<img src="imagenes/fresas3.jpg">
-<img src="imagenes/fresas6.jpg">
-<img src="imagenes/fresas7.jpg">
-<img src="imagenes/fresas8.jpg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas4.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas5.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas3.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas6.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas7.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas8.jpg.jpeg">
 
 </div>
 
 </section>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+<span onclick="cerrarModal()">×</span>
+<img id="imagenGrande">
+</div>
 
 <section id="opiniones">
 
@@ -245,15 +299,15 @@ animation:caer linear infinite;
 <div class="opiniones">
 
 <div class="opinion">
-Las fresas son deliciosas y muy frescas.
+⭐ Las fresas son deliciosas y muy frescas.
 </div>
 
 <div class="opinion">
-Excelente atención y productos de calidad.
+⭐ Excelente atención y productos de calidad.
 </div>
 
 <div class="opinion">
-Las uchuvas son increíbles, súper recomendadas.
+⭐ Las uchuvas son increíbles, súper recomendadas.
 </div>
 
 </div>
@@ -264,24 +318,47 @@ Las uchuvas son increíbles, súper recomendadas.
 
 <h2>Haz tu pedido</h2>
 
-<p style="text-align:center;">
-Contáctanos directamente por WhatsApp para hacer tu pedido.
-</p>
+<a class="botonPedido" 
+href="https://wa.me/50683310543?text=Hola%20quiero%20hacer%20un%20pedido%20de%20fresas%20🍓"
+target="_blank">
+Hacer pedido por WhatsApp
+</a>
 
 </section>
 
 <footer>
 
-<p>🍓 Fresas y Uchuvas el Cerro</p>
-<p>Pedidos al WhatsApp: +506 8331 0543</p>
+<p>🍓 Fresas y Uchuvas El Cerro</p>
+<p>Pedidos WhatsApp: +506 8331 0543</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/50683310543" target="_blank">
+<a class="whatsapp" 
+href="https://wa.me/50683310543?text=Hola%20quiero%20información%20sobre%20las%20fresas"
+target="_blank">
 💬 WhatsApp
 </a>
 
 <script>
+
+/* GALERIA MODAL */
+
+const imagenes=document.querySelectorAll(".galeria img");
+const modal=document.getElementById("modal");
+const imagenGrande=document.getElementById("imagenGrande");
+
+imagenes.forEach(img=>{
+img.onclick=()=>{
+modal.style.display="block";
+imagenGrande.src=img.src;
+}
+})
+
+function cerrarModal(){
+modal.style.display="none";
+}
+
+/* FRUTAS CAYENDO */
 
 function crearFruta(){
 
@@ -304,10 +381,9 @@ fruta.remove();
 
 }
 
-setInterval(crearFruta,600);
+setInterval(crearFruta,500);
 
 </script>
 
 </body>
 </html>
-
