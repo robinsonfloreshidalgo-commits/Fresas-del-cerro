@@ -24,7 +24,7 @@ background:#c4002f;
 color:white;
 display:flex;
 justify-content:space-between;
-padding:15px 30px;
+padding:15px 40px;
 align-items:center;
 position:sticky;
 top:0;
@@ -32,18 +32,28 @@ z-index:1000;
 box-shadow:0 3px 10px rgba(0,0,0,0.2);
 }
 
+nav h2{
+margin:0;
+font-size:24px;
+}
+
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+margin-left:25px;
+font-weight:600;
+position:relative;
+}
+
+nav a:hover{
+color:#ffd6dc;
 }
 
 /* HERO */
 
 .hero{
 height:90vh;
-background-image:url("https://img.freepik.com/fotos-premium/fresas-envasadas-caja-dulce-madura-perfecta-cosecha-fresas-huerta-organica-agricultura_360074-35819.jpg");
+background-image:url("https://jardiniemos.com/wp-content/uploads/2023/10/ventajas-de-plantar-fresas-en-vertical-1024x585.jpg");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -119,7 +129,7 @@ transition:0.3s;
 transform:scale(1.08);
 }
 
-/* MODAL GALERIA */
+/* MODAL */
 
 .modal{
 display:none;
@@ -165,11 +175,11 @@ border-radius:10px;
 box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
-/* BOTONES */
+/* BOTON */
 
 .botonPedido{
 display:block;
-width:250px;
+width:260px;
 margin:30px auto;
 background:#25d366;
 color:white;
@@ -181,7 +191,7 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* WHATSAPP FLOTANTE */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -206,7 +216,7 @@ padding:20px;
 margin-top:40px;
 }
 
-/* FRUTAS CAYENDO */
+/* FRUTAS */
 
 .fruta{
 position:fixed;
@@ -255,13 +265,13 @@ animation:caer linear infinite;
 <div class="card">
 <img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas2.jpg.jpeg">
 <h3>Fresas Frescas</h3>
-<p>Fresas dulces, frescas y perfectas para postres.</p>
+<p>Fresas dulces y recién cosechadas.</p>
 </div>
 
 <div class="card">
 <img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/uchuvas1.jpg.jpeg">
 <h3>Uchuvas</h3>
-<p>Uchuvas naturales llenas de sabor y vitaminas.</p>
+<p>Uchuvas naturales llenas de sabor.</p>
 </div>
 
 </div>
@@ -277,15 +287,13 @@ animation:caer linear infinite;
 <img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas4.jpg.jpeg">
 <img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas5.jpg.jpeg">
 <img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas3.jpg.jpeg">
-<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas6.jpg.jpeg">
-<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas7.jpg.jpeg">
-<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas8.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Frsas6.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/frsas7.jpg.jpeg">
+<img src="https://raw.githubusercontent.com/robinsonfloreshidalgo-commits/Fresas-del-cerro/main/Fresas8jpg.jpeg">
 
 </div>
 
 </section>
-
-<!-- MODAL -->
 
 <div id="modal" class="modal">
 <span onclick="cerrarModal()">×</span>
@@ -341,7 +349,7 @@ target="_blank">
 
 <script>
 
-/* GALERIA MODAL */
+/* MODAL GALERIA */
 
 const imagenes=document.querySelectorAll(".galeria img");
 const modal=document.getElementById("modal");
